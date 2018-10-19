@@ -39,8 +39,8 @@ body{
 }
 
 canvas{
-  display:block;
-  vertical-align:bottom;
+  display: block;
+  vertical-align: bottom;
 }
 
 
@@ -81,17 +81,29 @@ canvas{
 .count-particles{
   border-radius: 0 0 3px 3px;
 }
-.welcome{
+/* .welcome{
   background-size: cover;
   height: 100vh;
-}
-/* .main-header{
-  
+} */
+ /* ---- particles.js container ---- */
+
+#particles-js{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 80%;
+  align-items: center;
+  height: 100%;
+  background-color: #2987df;
+  flex-wrap: wrap;
+  background-image: url('');
+  background-size: cover; 
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+}
+.main-header{
+  color: white;
+  
+    
 }
 .about{
   text-align: center;
@@ -101,22 +113,4 @@ canvas{
 .container-about{
   display: flex;
   justify-content: space-evenly;
-} */
-.main-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-/* ---- particles.js container ---- */
-
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-image: url('');
-  /* background-size: cover; */
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
