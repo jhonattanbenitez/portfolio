@@ -1,68 +1,73 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none}
-
-
-/* =============================================================================
-   My CSS
-   ========================================================================== */
-
-/* ---- base ---- */
-
 html,body{ 
 	width:100%;
 	height:100%;
-	background:#111;
+  background:#111;
+  font-size: 15px;
 }
-
-html{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }
-
-canvas{
-  display: block;
-  vertical-align: bottom;
+.welcome {
+  background: 	#734f9a;
+  color: #fff;
+  background-size: cover;
+  background-attachment: fixed !important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  background: 	#965fd4;
+  color: #1d1a2f; 
+  height: 3rem;
 }
 .highlight{
-  color: #1BE19B;
+  color: #8bd450;
 }
-#particles-js{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: #2987df;
-  flex-wrap: wrap;
-  background-image: url('');
-  background-size: cover; 
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  z-index: 999;
-  
-}
-.main-header{
+.header-text{
   color: white;
-  position: absolute; 
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
 }
+
+.header-text .display-4 {
+  margin-top: 4rem;
+}
+.header-text .btn-primary {
+  margin-top: 1rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #3f6d4e;
+  border-color: transparent;
+  transition: all .5s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+  background-color: #8bd450;
+  border-color: transparent;
+}
+.down-arrow a {
+  display: inline-block;
+  color: #fff;
+  font-size: 4rem;
+  animation: animation-arrow 1s ease-in-out infinite;
+  padding: 1rem;
+}
+@keyframes animation-arrow {
+  from {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(6px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
 
 .about{
   text-align: center;
@@ -74,6 +79,11 @@ canvas{
 .container-about{
   display: flex;
   justify-content: space-evenly;
-  
+}
+
+@media (min-width: 768px){
+  h1{
+    font-size: 0.5rem
+  }
 }
 
