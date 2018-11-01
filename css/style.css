@@ -25,6 +25,9 @@ header .container {
   align-items: center;
   flex-wrap: wrap;
 }
+.navbar-brand{
+  font-size: 2rem;
+}
 .main-menu {
   flex: 1 1 100%;
 }
@@ -35,6 +38,7 @@ header .container {
 }
 .main-menu ul a {
   display: block;
+  font-size: 3rem;
   padding: .8rem 0;
   text-align: center;
   color: #fff;
@@ -116,8 +120,12 @@ header .container {
   }
 }
 
-@media (min-width: 900) {
+@media (min-width: 1000) {
   html {
     font-size: 1.6rem;
+  }
+  .main-menu ul a {
+  font-size: 1rem;
+   
   }
 }
