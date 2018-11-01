@@ -61,7 +61,7 @@ header .container {
   align-items: center;
 }
 
-.header-text .display-5 {
+.header-text .display-4 {
   margin-top: 2rem;
 }
 .header-text .btn-primary {
@@ -98,8 +98,6 @@ header .container {
   }
 }
 
-
 .about{
    background: #965fd4;
-  
 }
