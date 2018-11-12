@@ -1,76 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jhonattan Portfolio</title>
-  <!--Cargando fuentes-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-  <!--Carga de archivos CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<section class="welcome">
   <header>
-    <div class="container">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">{JB}</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse  main-menu" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              
-            </ul>
+      <nav class="navbar" id="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+          </span>
+          <p class="logo">{JB}</p>
+          <ul class="main-menu" id="js-menu">
+            <li><a href="#aboutme" class="nav-links">Hello</a></li>
+            <li><a href="#skills" class="nav-links">Skills</a></li>
+            <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+            <li><a href="#contactme" class="nav-links">Contact Me</a></li>
+          </ul>
+      </nav>
+</header>
+<section class="aboutme" id="aboutme">
+    <div class="shortbio">
+      <h1>I'm Jhonattan Benitez and i'm Front-End Developer.</h1>
+      <p>I am a Front-End Developer from  Cali, Colombia. I currently work on a eSport project and i am looking to take more
+        work and increase my Skills as a Web Developer.
+      </p>
+      <!-- <p><span>PHONE:</span> +57 3218358071</p>
+      <p><span>EMAIL</span> jhonattan.benitez@hotmail.com</p>
+      <p><span>SOCIAL</span>
+          <ul>
+            <li>facebook</li>
+            <li>twitter</li>
+            <li>instagram</li>
+            <li>linkedin</li>
+            <li>github</li>
+          </ul>
+      </p> -->
+      <div class="infocontainer">
+        <div class="info">
+          <p>PHONE</p>
+          <P>EMAIL</P>
+          <P>SOCIAL</P>
+        </div>
+        <div class="data">
+          <p>+57 321 8358071</p>
+          <p>jhonattan.benitez@hotmail.com</p>
+          <p><ul class="social">
+              <li><a href="https://www.facebook.com/jhonattan.benitez"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="https://twitter.com/JhonB07"><i class="fab fa-twitter-square"></i></a></li>
+              <li><a href="https://www.instagram.com/jhonb07/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/jhonattan-benitez-ballesteros-752b3650/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/jhonattanbenitez"><i class="fab fa-github-square"></i></a></li>
+            </ul></p>
+        </div>
+      </div>
+      <div class="contactbuttons">
+          <button class="contactbtn">Contact Me</button>
+          <button class="downloadbtn">Download CV</button>
+      </div>
+    </div>
+    <div class="pic">
+      <img src="img/me.jpeg" alt="jhonattan benitez pic">
+    </div>
+</section>
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <p>I believe passion and inspiration along with discipline are the key to develop a great work. 
+       I'm inspired with people who are as passionate as i am about  solving problems and building something awesome.
+    </p>
+    <h3>Frontend Development</h3>
+    <p>HTML, CSS, SASS, Bootstrap, JavaScript, React, WordPress</p>
+</section>
+<section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="row">
+        <div class="facerecognitionapp">
+          <div class="textblock">
+            <h3>Face Recognition App</h3>
+            <p>This is an application that given a url image it's capable of face Recognition calling a Clarifai API.
+              It's builded with React in the Front-End and Node.js and postgreSQL in the back-end.
+            </p>
           </div>
-        </nav>
-      </div>
-  </header>  
-  <div class="header-text text-center">
+          <div class="imgblock">
+            <img src="img/facerecognitionapp.PNG" alt="facerecognitionapp">
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="coding-challenge">
+          <div class="textblock">
+            <h3>Coding Challenge</h3>
+            <p>This is a coding challenge based on working with a designer and building a project for a client. 
+               It's builded with HTML5 and CSS and it's full responsive using just media queries.
+            </p>
+          </div>
+          <div class="imgblock">
+            <img src="img/desktop-preview.jpg" alt="coding-challenge">
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="hacktoberfest">
+          <div class="textblock">
+            <h3>Halloween Hacktoberfest Edition</h3>
+            <p>This project is thinked as an open source challenge by Digital Ocean, the idea making pull requests through github and
+              build this entire website with the community. It's builded with HTML5, CSS and JavaScript mostly.
+            </p>
+          </div>
+          <div class="imgblock">
+            <img src="img/hacktoberfest.PNG" alt="hacktoberfest">
+          </div>
+        </div>
+    </div>
+    
+</section>
+<footer>
+<section class="contact" id="contact">
     <div class="container">  
-      <h1 class="display-3">Hi, i'm <span class="highlight">Jhonattan Benitez.</span> <br>I'm a Front-End Developer</h1>
-      <a href="#contact" class="btn btn-primary btn-lg">Contact</a>
-    </div>
-  </div>
-  <div class="down-arrow text-center">
-    <a data-scroll href="#about"><i class="fas fa-chevron-down"></i></a>
-</div>
-</section>
-<section class="about py-1" id="about">
-  <div class="container">
-      <h2 class="display-5 text-center">About</h2>
-      <h3 class="text-center">How do i do it?</h3>
-
-      <div class="row">
-         <div class="col-sm">
-              <p>Responsive</p>
-         </div>
-         <div class="col-sm">
-             <p>Friendly UI/UX</p>
-         </div>
-         <div class="col-sm">
-             <p>Useful</p>
-         </div>
-      </div>
+        <form id="contact" action="" method="post">
+          <h3>Quick Contact</h3>
+          <h4>Contact me today, and get reply within 24 hours!</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your Message Here...." tabindex="3" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="contactbtn">Submit</button>
+          </fieldset>
+        </form>
     </div>
 </section>
-<section id="portfolio">
- 
 
-</section>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <ul class="social">
+        <li><a href="https://www.facebook.com/jhonattan.benitez"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/JhonB07"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://www.instagram.com/jhonb07/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jhonattan-benitez-ballesteros-752b3650/"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/jhonattanbenitez"><i class="fab fa-github-square"></i></a></li>
+      </ul></p>
+    </div>
+    <p>Jhonattan Benitez 2018</p>
+</footer>
+   <script src="js/script.js"></script>
 </body>
 </html>
