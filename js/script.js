@@ -5,18 +5,21 @@ let navBarToggle = document.getElementById('js-navbar-toggle');
 navBarToggle.addEventListener('click', function () {
     
     mainMenu.classList.toggle('active');
+    
 });
-//sticky navbar
-window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-console.log(navbar);
-var sticky = navbar.offsetTop;
+let navLinks = document.getElementsByClassName('nav-links');
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+Array.from(navLinks).forEach(link =>{
+  link.addEventListener('click', ()=>{
+    mainMenu.classList.remove('active');
+  });
+});
+
+rolldown = document.querySelectorAll(".rolldown-list li");
+
+rolldown.forEach((element, i) => {
+    const delay = i / 4 +"s";
+    element.style.animationDelay = delay;
+});
+

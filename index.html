@@ -11,12 +11,12 @@
 </head>
 <body>
   <header>
-      <nav class="navbar" id="navbar">
+      <nav class="navbar sticky" id="navbar">
           <span class="navbar-toggle" id="js-navbar-toggle">
               <i class="fas fa-bars"></i>
           </span>
           <p class="logo">{JB}</p>
-          <ul class="main-menu" id="js-menu">
+          <ul class="main-menu rolldown-list" id="js-menu" >
             <li><a href="#aboutme" class="nav-links">Hello</a></li>
             <li><a href="#skills" class="nav-links">Skills</a></li>
             <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
@@ -68,16 +68,23 @@
       <img src="img/me.jpeg" alt="jhonattan benitez pic">
     </div>
 </section>
-<section class="skills" id="skills">
-    <h2>Skills</h2>
+<section class="skills">
+    
+    <div id="ctn">
+      <a name="skills"></a>
+      <h2>Skills</h2>
+    </div>
     <p>I believe passion and inspiration along with discipline are the key to develop a great work. 
        I'm inspired with people who are as passionate as i am about  solving problems and building something awesome.
     </p>
     <h3>Frontend Development</h3>
     <p>HTML, CSS, SASS, Bootstrap, JavaScript, React, WordPress</p>
 </section>
-<section class="portfolio" id="portfolio">
-    <h2>Portfolio</h2>
+<section class="portfolio">
+    <div id="ctn">
+      <a name=portfolio></a>
+      <h2>Portfolio</h2>
+    </div>
     <div class="row">
         <div class="facerecognitionapp">
           <div class="textblock">
@@ -120,8 +127,11 @@
     
 </section>
 <footer>
-<section class="contact" id="contact">
-    <div class="container">  
+  <div class="contact" id="contact">
+      <div id="ctn">
+        <a name="contactme"></a>
+      </div>
+      <div class="container">  
         <form id="contact" action="" method="post">
           <h3>Quick Contact</h3>
           <h4>Contact me today, and get reply within 24 hours!</h4>
@@ -139,17 +149,17 @@
           </fieldset>
         </form>
     </div>
-</section>
-
-    <ul class="social">
-        <li><a href="https://www.facebook.com/jhonattan.benitez"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a href="https://twitter.com/JhonB07"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="https://www.instagram.com/jhonb07/"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/jhonattan-benitez-ballesteros-752b3650/"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/jhonattanbenitez"><i class="fab fa-github-square"></i></a></li>
-      </ul></p>
-    </div>
-    <p>Jhonattan Benitez 2018</p>
+  </div>
+  <div class="bottominfo">
+    	<ul class="social">
+    	    <li><a href="https://www.facebook.com/jhonattan.benitez"><i class="fab fa-facebook-square"></i></a></li>
+    	    <li><a href="https://twitter.com/JhonB07"><i class="fab fa-twitter-square"></i></a></li>
+    	    <li><a href="https://www.instagram.com/jhonb07/"><i class="fab fa-instagram"></i></a></li>
+    	    <li><a href="https://www.linkedin.com/in/jhonattan-benitez-ballesteros-752b3650/"><i class="fab fa-linkedin-in"></i></a></li>
+    	    <li><a href="https://github.com/jhonattanbenitez"><i class="fab fa-github-square"></i></a></li>
+    	  </ul></p>
+    	 <p>Jhonattan Benitez 2018</p>
+   </div>
 </footer>
    <script src="js/script.js"></script>
 </body>
