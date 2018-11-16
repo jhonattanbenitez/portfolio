@@ -42,6 +42,7 @@ body{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 .navbar-toggle {
@@ -238,6 +239,23 @@ footer{
   background-color: #4fff4f;
 }
 
+.slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+.align-left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+
 /* #js-menu {
   position: absolute;
   width: 50%;
@@ -318,11 +336,15 @@ footer{
   .aboutme{
     flex-direction: row;
     padding: 2rem;
+    height: 400px;
   }
   .shortbio{
     margin-top: 100px;
     margin-right: 2rem;
-  }
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+ }
   .pic{
     width: 50%;
     padding: 0;
