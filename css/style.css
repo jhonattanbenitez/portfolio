@@ -357,6 +357,7 @@ footer{
   }
   .portfolio{
     padding: 2rem;
+  
   }
   .rownormie{
     display: flex;
@@ -370,10 +371,11 @@ footer{
     width: 50%;
   }
   .imgblock{
-    width: 50%;
+    width: 75%;
   }
   footer{
     display: flex;
+    justify-content: center;
   }
 
   
