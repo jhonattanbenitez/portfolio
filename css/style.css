@@ -8,7 +8,7 @@ body{
 }
 .navbar{
   font-size: 1.3rem;
-  background: #765898;
+  background: #0c0032;
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
 }
@@ -25,7 +25,7 @@ body{
   text-transform:  uppercase;
 }
 .main-menu li:hover{
-  background: #52d053;
+  background: #3500d3;
 }
 .logo {
   display: inline-block;
@@ -37,6 +37,7 @@ body{
 .nav-links, logo{
    text-decoration: none;
    color: white;
+   margin: 2rem;
 }
 .sticky {
   position: fixed;
@@ -91,10 +92,15 @@ body{
   display: flex;
   justify-content: flex-start;
   padding: 0;
+  color: white;
 }
 .social li{
   font-size: 1.2rem;
   margin-right: 1rem;
+  
+}
+.social a{
+  color: white;
 }
 .contactbtn{
   background: #765898;
@@ -221,7 +227,7 @@ fieldset {
 }
 footer{
   
-  background: #52d053;
+  background: #282828;
 }
 .rolldown-list li {
   visibility: hidden;
@@ -234,11 +240,11 @@ footer{
 }
 
 .rolldown-list li:nth-child(2n) {
-  background-color: #52d053;
+  background-color: #3500d3;
 }
 
 .rolldown-list li:nth-child(2n+1) {
-  background-color: #4fff4f;
+  background-color: #240090;
 }
 
 .slide-in {
@@ -339,6 +345,8 @@ footer{
     flex-direction: row;
     padding: 2rem;
     height: 400px;
+    background-color: #190061;
+    color: white;
   }
   .shortbio{
     margin-top: 100px;
